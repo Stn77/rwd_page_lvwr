@@ -11,6 +11,11 @@
                 <div class="dark:bg-gray-600 p-4 text-gray-900 dark:text-gray-100">
                     {{__($soalText)}}
                 </div>
+                <div>
+                    <input type="checkbox" value="{{$idSoal}}" wire:click='answer({{$idSoal}})' @if ($checkedTrue == 1git)
+                        checked
+                    @endif>
+                </div>
             </div>
             <div class="p-6 max-w-56 text-gray-50 dark:bg-gray-700 flex items-center justify-center flex-wrap dark:text-gray-100">
                 @foreach ($soal as $ind => $s)

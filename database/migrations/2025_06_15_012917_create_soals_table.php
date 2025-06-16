@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('soals', function (Blueprint $table) {
             $table->id();
-            $table->string('soal');
-            $table->string('jawaban');
+            $table->text('soal');
+            $table->text('jawaban');
             $table->boolean('confirmed')->default(false);
             $table->timestamps();
         });
